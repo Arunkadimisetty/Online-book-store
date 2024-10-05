@@ -16,5 +16,5 @@ $res=$conn->query($sql);
 $sql1="insert into user values('$username','$password')";
 $res1=$conn->query($sql1);
 $conn->close();
-include "index.html";
+include "arun.html";
 ?>
