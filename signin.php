@@ -14,7 +14,7 @@ $sql="select * from user where username='$username' and password='$password'";
 $res=$conn->query($sql);
 if($res->num_rows>0)
 {
-    include "index.html";
+    include "arun.html";
     echo "<script>
     alert('Welcome " . addslashes($username) . "');
     </script>";
