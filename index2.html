@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plot Plaza</title>
+</head>
+<body>
+    <header>
+        
+        <h1><img src="logo.png"> PLOT PLAZA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="cart-info">Items in Cart: <span id="cart-count">0</span></div>
+    </header>
+    
+    <main>
+        <section class="book-list">
+            <h2>Programing Books</h2>
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/613aaFTpncL._AC_UY327_FMwebp_QL65_.jpg" alt="Book 3">
+                <h3>Pro Django</h3>
+                <p>Author: Marty swag</p>
+                <p>Price: $15.99</p>
+                <button onclick="addToCart()">Add to Cart</button><br><br>
+                <button><a href="pay.html">Buy Now</a></button>
+            </div>
+        </section>
+    </main>
+    <main>
+    <section class="book-list2">
+        <h2>Competetive Books</h2>
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81AgcTtMEHL._AC_UY327_FMwebp_QL65_.jpg" alt="Book 3">
+            <h3>CGL Warrior</h3>
+            <p>Author: Adityaranjan</p>
+            <p>Price: $27.99</p>
+            <button onclick="addToCart()">Add to Cart</button><br><br>
+            <button><a href="pay.html">Buy Now</a></button>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Plot Plaza</p>
+    </footer>
+<script>alert("you have netered wrong password ");</script>
+    <script src="script.js"></script>
+</body>
+</html>

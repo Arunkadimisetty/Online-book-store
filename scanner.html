@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plot Plaza</title>
+    <style>
+.payments
+{
+    justify-content: center;
+    text-align: center;
+    }
+    p span{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1><img src="logo.png"> PLOT PLAZA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="cart-info">Items in Cart: <span id="cart-count">0</span></div>
+    </header>
+    <div class="payments">
+        <h2>Proceed to Payment &downarrow;</h2>
+            <img style="width: 250px; height: 250px;" src="data:image/png;base64,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" alt="">
+        <p>Complete the Transaction before <span>5 Minutes</span></p>
+        <h3>Scan Above Code for Payment</h3>
+        <p>After Completion of the Payment. Click on the Place Order Button</p>
+        <center><button onclick="addtoAlert()">Place The Order </button></center>
+        <br>
+        
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Plot Plaza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
