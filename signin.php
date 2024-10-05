@@ -14,14 +14,14 @@ $sql="select * from user where username='$username' and password='$password'";
 $res=$conn->query($sql);
 if($res->num_rows>0)
 {
-    include "arun.html";
+    include 'arun.html';
     echo "<script>
     alert('Welcome " . addslashes($username) . "');
     </script>";
 }
 else
 {  
-include "signin.html";
+include 'signin.html';
    echo "<script>
     alert('You have entered wrong Password');
     </script>";
