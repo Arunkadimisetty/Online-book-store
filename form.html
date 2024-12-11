@@ -71,7 +71,7 @@
             <img src="logo.png" alt="Logo">
         </div>
         <div class="form">
-            <form action="form.php" method="POST" onsubmit="return validateForm()">
+            <form action="index2.html" method="GET" onsubmit="return validateForm()">
                 <h2>Username:</h2>
                 <input type="text" name="username" id="username" placeholder="Enter Your Username" required>
                 
@@ -95,7 +95,7 @@
             const confirmPassword = document.getElementById('confirmPassword').value;
             const error = document.getElementById('error');
             if (password !== confirmPassword) {
-                error.textContent = "Passwords does not match!";
+                error.textContent = "Passwords do not match!";
                 return false; 
             }
             error.textContent = ""; 
