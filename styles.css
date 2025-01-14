@@ -9,7 +9,7 @@ body {
 header {
     background: #008080;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ nav ul {
     margin: 10px 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav ul li {
@@ -37,7 +37,7 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 4px;
 }
 
@@ -46,11 +46,10 @@ nav a:hover {
 }
 
 .book-list, .book-list2, .book-list3 {
-    padding: 20px;
+    padding: 30px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    gap: 30px;
 }
 
 .book {
@@ -59,8 +58,6 @@ nav a:hover {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    width: 100%;
-    max-width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -145,6 +142,13 @@ footer {
 }
 
 /* Responsive Styles */
+@media (max-width: 992px) {
+    .book-list, .book-list2, .book-list3 {
+        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
